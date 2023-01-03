@@ -1,84 +1,57 @@
 baseURL = "/"
+disqusShortname = ""
 languageCode = "en-us"
-title = "Hugo Northendlab Forestry starter"
-theme = "github.com/themefisher/northendlab-hugo"
 paginate = "5"
 summaryLength = "10"
-disqusShortname = "" # get your shortname form here : https://disqus.com
-
+theme = "github.com/themefisher/northendlab-hugo"
+title = "Hugo Northendlab Forestry starter"
+[[menu.footer]]
+name = "English/Arabic"
+weight = 3
+[[menu.footer]]
+URL = "tools"
+name = "tools"
+weight = 2
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 1
+[[menu.main]]
+URL = "tools"
+name = "tools"
+weight = 2
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 1
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
+author = "Themefisher"
+contact_form_action = "#"
+copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
+description = "This is meta description"
+google_analitycs_id = ""
+google_tag_manager = ""
 home = "Home"
 logo = "images/logo.svg"
-author = "Themefisher"
-description = "This is meta description"
-google_tag_manager = "" # your id
-google_analitycs_id = "" # your id
-contact_form_action = "#" # contact form works with : https://formspree.io
-copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
-
-[params.preloader]
-enable = true
-preloader = "" # use png, jpg, svg or gif format
-
-[params.search]
-enable = true
-
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
-title = "Hi, I'm John Smith Doe. <br> I help people make the  worlds best software"
 image = "images/banner/illustration.svg"
-
+title = "Hi, I'm John Smith Doe. <br> I help people make the  worlds best software"
 [params.cta]
+description = "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
 enable = true
 image = "images/hugo-muscot.svg"
 title = "Get the best hugo templates"
-description = "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
 [params.cta.button]
 enable = true
 label = "Visit Here"
 link = "https://gethugothemes.com/shop/"
-
-[[params.social]]
-icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
-link = "#"
-[[params.social]]
-icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
-link = "#"
-[[params.social]]
-icon = "ti-github" # themify icon pack https://themify.me/themify-icons
-link = "#"
-[[params.social]]
-icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
-link = "#"
-
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 1
-
-[[menu.main]]
-URL = "tools"
-name = "tools"
-weight = 2
-
-[[menu.footer]]
-URL = "contact"
-name = "Contact"
-weight = 1
-
-[[menu.footer]]
-URL = "tools"
-name = "tools"
-weight = 2
-
-[outputs]
-home = ["HTML", "AMP", "RSS", "JSON"]
-
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/themify-icons/themify-icons.css"
-
 [[params.plugins.js]]
 link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
@@ -89,3 +62,20 @@ link = "plugins/search/fuse.min.js"
 link = "plugins/search/mark.js"
 [[params.plugins.js]]
 link = "plugins/search/search.js"
+[params.preloader]
+enable = true
+preloader = ""
+[params.search]
+enable = true
+[[params.social]]
+icon = "ti-facebook"
+link = "#"
+[[params.social]]
+icon = "ti-twitter-alt"
+link = "#"
+[[params.social]]
+icon = "ti-github"
+link = "#"
+[[params.social]]
+icon = "ti-linkedin"
+link = "#"
