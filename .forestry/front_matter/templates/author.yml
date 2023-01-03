@@ -11,6 +11,3 @@ fields:
 - type: file
   name: image
   label: image
-pages:
-- content/author/hasan-muhammad-mehedi.md
-- content/author/mehedi.md
